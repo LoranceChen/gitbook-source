@@ -28,7 +28,7 @@
 ## Tool
 * Git
 
-## Personal Project
+## Personal OpenSource Project
 * MiniMO Game
    * RxSocket
    * Unity3D
