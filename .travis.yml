@@ -23,7 +23,7 @@ after_script:
   - git remote add origin https://${REF}
   - git add .
   - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
-  - git push --force --quiet "https://${GITEE_TOKEN}@${REF}" master:master
+  - git push --force --quiet "https://${CODING_NET_TOKEN}@${REF}" master:master
 
 branches:
   only:
@@ -31,4 +31,4 @@ branches:
 
 env:
   global:
-    - REF=gitee.com/lorance/gitbook-generated.git # 设置 github 地址
+    - REF=git.coding.net/lorancechen/gitbook-gen.git # 设置 github 地址
