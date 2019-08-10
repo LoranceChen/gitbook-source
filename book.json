@@ -9,7 +9,6 @@
     "disqus",
     "github-buttons",
     "editlink",
-    "ga",
     "-highlight",
     "prism",
     "bibtex-indexed-cite",
@@ -30,24 +29,21 @@
       "showLevel": false
     },
     "disqus": {
-      "shortName": "gitbook-template"
+      "shortName": "lorancechen's gitbook"
     },
     "github-buttons": {
       "buttons": [{
-        "user": "riskers",
-        "repo": "gitbook-template",
+        "user": "lorancechen",
+        "repo": "gitbook-source",
         "type": "star",
         "size": "small",
         "count": true
       }]
     },
     "editlink": {
-      "base": "https://github.com/riskers/gitbook-template/blob/master",
+      "base": "https://github.com/lorancechen/gitbook-source/blob/master",
       "label": "Edit",
       "multilingual": false
-    },
-    "ga": {
-      "token": "UA-131910384-3"
     },
     "prism": {
       "ignore": [
@@ -71,7 +67,7 @@
       "wechat": "/image/wechatpay.png",
       "alipay": "/image/alipay.png",
       "title": "",
-      "button": "赏",
+      "button": "打赏作者",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
     }
