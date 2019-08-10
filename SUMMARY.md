@@ -1,6 +1,6 @@
 # Summary
 * [About](./README.md)
-* [关于作者](./Author.md)
+* [关于作者](./author.md)
 ## Daily
 * 2019-08
    * [gitbook-in-github](./daily/2019-08/gitbook-in-github.md)
@@ -24,3 +24,18 @@
     * AOP
 * [Java Mybatis](./framework/java-mybatis.md)
 * [2-1](./chap02/2-1.md)
+
+## Tool
+* Git
+
+## Personal Project
+* MiniMO Game
+   * RxSocket
+   * Unity3D
+* Clean Blog
+   * GitBook Like
+   * Emacs Extends Like
+   * Edit & View 
+   * Martket
+     * sale your plugin
+     * create a extend Topic
