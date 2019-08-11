@@ -1,6 +1,6 @@
 {
-  "title": "title",
-  "author": "",
+  "title": "LoranceChen Blog",
+  "author": "LoranceChen",
   "plugins": [
     "-lunr",
     "-search",

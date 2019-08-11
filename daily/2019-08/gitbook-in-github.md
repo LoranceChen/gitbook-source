@@ -1,5 +1,4 @@
 # GitBook in Github
-- 2019-08-10
 
 ## gitbook介绍
 
@@ -7,7 +6,7 @@
 
 ## 创建用于编写的markdown代码库
 
-## github travil配置
+## github的travis配置
 
 ## 配置个人域名
 

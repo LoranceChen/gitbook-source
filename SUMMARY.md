@@ -1,9 +1,9 @@
 # Summary
-* [About](./README.md)
-* [关于作者](./author.md)
+* [About](README.md)
+* [关于作者](author.md)
 ## Daily
 * 2019-08
-   * [gitbook-in-github](./daily/2019-08/gitbook-in-github.md)
+   * [gitbook-in-github](daily/2019-08/gitbook-in-github.md)
 
 ## Programming Language
 * Java
@@ -15,15 +15,15 @@
 * Golang
 * Haskell
 * Rust
-* [1-1](./chap01/1-1.md)
+* [1-1](chap01/1-1.md)
 
 ## Framework
 * Java Spring
-    * [Bean](./framework/java-spring/bean.md)
+    * [Bean](framework/java-spring/bean.md)
     * IOC
     * AOP
-* [Java Mybatis](./framework/java-mybatis.md)
-* [2-1](./chap02/2-1.md)
+* [Java Mybatis](framework/java-mybatis.md)
+* [2-1](chap02/2-1.md)
 
 ## Tool
 * Git
