@@ -114,7 +114,7 @@ gitbook是一个命令行工具。按照上述介绍，该命令行工具可以�
 - 配置github Travis。因为配置大部分为页面操作，具体截图可以按照：https://github.com/riskers/blog/issues/48 中的Travis一节操作。细分一下操作：
     - 给Travis授权。 https://github.com/marketplace/travis-ci
     - 生成项目生成token，配置token权限。
-- 创建`.travis.yaml`文件，内容参考如下：
+- 在my_gitbook中，创建`.travis.yaml`文件，内容参考如下：  
 注意，yaml文件中的CNAME配置可以自定义域名，但要提前在域名提供商中做好CNAME的配置。
 
 ```
@@ -155,9 +155,12 @@ env:
     - REF=github.com/lorancechen/{your username}.github.io.git # 设置 github 地址
 
 ```
-- 测试效果。提交代码后可以看到travis正在跑CI，过几分钟查看`{your username}.github.io.git`仓库，是否提交完成。访问该http地址确认提交完成：`http://{your username}.github.io.git`
+- 测试效果。提交代码后可以看到travis正在跑CI，过几分钟查看`{your username}.github.io.git`仓库，验证是否提交完成。github对静态资源的缓存为10分钟，过10分钟后访问该http地址，验证内容是否生效：`http://{your username}.github.io`
 
-- 关于Travis，后续可以在https://travis-ci.com/ 看到个人的配置。
+- 其他：
+    - 关于Travis，后续可以在https://travis-ci.com/ 看到个人的配置。
+    - 具体的配置，可以参考我的gitbook-source仓库：https://github.com/LoranceChen/gitbook-source
+    - 关于‘打赏’插件，在支付宝和微信中把指定了金额的收款二维码截图为jpg即可，然后配置在`book.json`中。
 
 ## 配置个人域名
 - 上面travis中提到了，在`.travis.yaml`中添加`echo "gitbook.youdomain.com" >> CNAME`语句即可支持CNAME自定义域名的功能。github的Pages服务会读取代码仓库中的CNAME文件作为自定义的域名。
