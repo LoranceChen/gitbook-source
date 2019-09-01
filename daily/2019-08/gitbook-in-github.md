@@ -112,8 +112,10 @@ gitbook是一个命令行工具。按照上述介绍，该命令行工具可以�
 目前配置了gitbook-source仓库，用于编写markdown文件。另外我们需要另外一个仓库用户托管生成的html静态文件。托管html的服务一般叫做Pages服务，除了github，笔者尝试了当前其他国内的托管平台，发现对Pages或者对后续Travis CI的的push功能支持有限。这里依然github的具体配置流程做了相关记录：
 - 在github中创建名为`{your username}.github.io`的仓库，用于托管生成的静态html资源，该命名规范为github的Pages服务的要求。Pages服务在当前的github的使用master分支。
 - 配置github Travis。因为配置大部分为页面操作，具体截图可以按照：https://github.com/riskers/blog/issues/48 中的Travis一节操作。细分一下操作：
-    - 给Travis授权。 https://github.com/marketplace/travis-ci
-    - 生成项目生成token，配置token权限。
+    - 生成github的授权token，配置token的权限。
+    - 给Travis授权。在Travis中关联gitbook-source代码库：https://github.com/marketplace/travis-ci。
+    - 配置github token，用于生成静态html站点后，push到github的代码库。
+    
 - 在my_gitbook中，创建`.travis.yaml`文件，内容参考如下：  
 注意，yaml文件中的CNAME配置可以自定义域名，但要提前在域名提供商中做好CNAME的配置。
 
@@ -158,7 +160,7 @@ env:
 - 测试效果。提交代码后可以看到travis正在跑CI，过几分钟查看`{your username}.github.io.git`仓库，验证是否提交完成。github对静态资源的缓存为10分钟，过10分钟后访问该http地址，验证内容是否生效：`http://{your username}.github.io`
 
 - 其他：
-    - 关于Travis，后续可以在https://travis-ci.com/ 看到个人的配置。
+    - 关于Travis CI，后续可以在https://travis-ci.com/ 用github账号登陆，查看项目的配置。
     - 具体的配置，可以参考我的gitbook-source仓库：https://github.com/LoranceChen/gitbook-source
     - 关于‘打赏’插件，在支付宝和微信中把指定了金额的收款二维码截图为jpg即可，然后配置在`book.json`中。
 
@@ -172,7 +174,7 @@ html生成的静态资源可以引用gitbook-source中的相对路径，我们�
 
 ## Best Practice
 关于这个流程的最佳实践，有如下几点：
-- 该流程适合写博客文章等需要一定时间思考才能编写出来的流程，不适合简单的todo list记录等临时的笔记需求。
+- 该流程适合写博客文章等需要一定时间思考才能编写出来的流程，不适合简单的做todo list记录等临时的笔记需求。
 - 编写文章时，先在本地打开`gitbook serve`，可以在本地实时预览效果，防止发布之后发现排版等问题。
 
 ## 总结
