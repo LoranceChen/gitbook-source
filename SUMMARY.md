@@ -1,9 +1,12 @@
 # Summary
 * [About](README.md)
 * [关于作者](author.md)
+
 ## Daily
 * 2019-08
    * [gitbook-in-github](daily/2019-08/gitbook-in-github.md)
+* 2019-09
+   * [interview-tech](occupy/interview-tech.md)
 
 ## Programming Language
 * Java
@@ -27,6 +30,9 @@
 
 ## Tool
 * Git
+
+## Occupy
+* [interview-tech](occupy/interview-tech.md)
 
 ## Personal OpenSource Project
 * MiniMO Game
