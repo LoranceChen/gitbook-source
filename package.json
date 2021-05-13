@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "gitbook": "^2.6.9",
-    "gitbook-plugin-todo": "^0.1.3"
-  },
-  "devDependencies": {
-    "gitbook-plugin-git-author": "^1.1.2"
-  }
-}

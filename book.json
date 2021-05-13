@@ -18,8 +18,7 @@
     "copy-code-button",
     "expandable-chapters-small",
     "donate",
-    "expandable-chapters",
-    "git-author"
+    "expandable-chapters"
   ],
   "pluginsConfig": {
     "search-pro": {
@@ -68,12 +67,6 @@
       "button": "打赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
-    },
-    "git-author":{
-      "position": "bottom",
-      "modifyTpl": "Last modified by {user} {timeStamp}",
-      "createTpl": "Created by {user} {timeStamp}",
-      "timeStampFormat": "YYYY-MM-DD HH:mm:ss"
     }
   }
 }
