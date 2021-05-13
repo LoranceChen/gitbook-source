@@ -10,8 +10,6 @@ notifications:
     on_success: change
     on_failure: always
 
-before_install: if [[ `npm -v` != 7* ]]; then npm i -g npm@7; fi
-
 install:
   - npm install -g gitbook-cli
   - gitbook install
