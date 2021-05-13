@@ -10,6 +10,9 @@ notifications:
     on_success: change
     on_failure: always
 
+before_install:
+  - npm i -g npm@7.11.2
+
 install:
   - npm install -g gitbook-cli
   - gitbook install
