@@ -2,6 +2,7 @@
   "title": "LoranceChen Blog",
   "author": "LoranceChen",
   "plugins": [
+    "icp",
     "-lunr",
     "-search",
     "search-pro",
@@ -67,6 +68,10 @@
       "button": "打赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
+    },
+    "icp": {
+      "number": "皖ICP备2021006543号-1",
+      "link": "https://beian.miit.gov.cn"
     }
   }
 }
